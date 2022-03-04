@@ -34,4 +34,4 @@ attributes = {
 response = requests.post(url, data=attributes)
 soup = BeautifulSoup(response.content, "lxml")
 
-print(soup.find_all("div", class_="inner")[1].text)
+print(soup.find_all("div", class_="inner")[1].text[3:])
