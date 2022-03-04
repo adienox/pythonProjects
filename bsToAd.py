@@ -3,7 +3,6 @@ from bs4 import BeautifulSoup
 
 url = "https://www.ashesh.com.np/nepali-date-converter.php"
 def monthSelect(arg):
-    print(arg)
     months = {
         1 : "Baishakh",
         2 : "Jestha",
