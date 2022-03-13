@@ -5,14 +5,14 @@ import sys
 # Keypress event
 def onPress(key):
     # Checks if key is key.alt_r
-    if key == keyboard.Key.alt_r:
+    if key == keyboard.Key.menu:
         # Unmutes the microphone
         os.system('pactl set-source-mute @DEFAULT_SOURCE@ false')
 
 # Key release event
 def onRelease(key):
     # Checks if key is key.alt_r
-    if key == keyboard.Key.alt_r:
+    if key == keyboard.Key.menu:
         # Mutes the microphone
         os.system('pactl set-source-mute @DEFAULT_SOURCE@ true')
 
